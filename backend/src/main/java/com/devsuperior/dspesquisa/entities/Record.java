@@ -24,6 +24,7 @@ public class Record implements Serializable {
 	private Integer age;
 	private Instant moment;
 	
+	//@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "game_id")
 	private Game game;
